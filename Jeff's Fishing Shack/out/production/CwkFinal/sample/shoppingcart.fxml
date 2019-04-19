@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="911.0" style="-fx-background-color: #008b8b;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Shoppingcart">
+   <children>
+      <ComboBox fx:id="combobox1" editable="true" layoutX="209.0" layoutY="99.0" prefWidth="150.0" />
+      <Label fx:id="totalPrice1" layoutX="705.0" layoutY="99.0" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #000080;" textFill="WHITE" />
+      <TextField fx:id="quantity1" layoutX="456.0" layoutY="99.0" onAction="#fishingReel" promptText="FISHING REELS" />
+      <ComboBox fx:id="combobox2" editable="true" layoutX="207.0" layoutY="182.0" prefWidth="150.0" />
+      <TextField fx:id="quantity2" layoutX="456.0" layoutY="182.0" onAction="#fishingHook" promptText="FISHING HOOKS" />
+      <Label fx:id="totalPrice2" layoutX="705.0" layoutY="182.0" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #000080;" textFill="WHITE" />
+      <Label fx:id="totalPrice10" layoutX="35.0" layoutY="99.0" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #000080;" textFill="#e41212" />
+      <ComboBox fx:id="combobox3" editable="true" layoutX="209.0" layoutY="267.0" prefWidth="150.0" />
+      <ComboBox fx:id="combobox4" editable="true" layoutX="207.0" layoutY="352.0" prefWidth="150.0" />
+      <ComboBox fx:id="combobox5" editable="true" layoutX="209.0" layoutY="442.0" prefWidth="150.0" />
+      <ComboBox fx:id="combobox6" editable="true" layoutX="207.0" layoutY="522.0" prefWidth="150.0" />
+      <TextField fx:id="quantity3" layoutX="456.0" layoutY="267.0" onAction="#fishingLine" promptText="FISHING LINE" />
+      <TextField fx:id="quantity4" layoutX="456.0" layoutY="352.0" onAction="#fishingRod" promptText="FISHING ROD" />
+      <TextField fx:id="quantity5" layoutX="456.0" layoutY="442.0" onAction="#sinkers" promptText="SINKERS" />
+      <TextField fx:id="quantity6" layoutX="456.0" layoutY="522.0" onAction="#swivels" promptText="SWIVELS" />
+      <Label fx:id="totalPrice3" layoutX="705.0" layoutY="267.0" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #000080;" textFill="WHITE" />
+      <Label fx:id="totalPrice4" layoutX="705.0" layoutY="352.0" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #000080;" textFill="WHITE" />
+      <Label fx:id="totalPrice5" layoutX="705.0" layoutY="442.0" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #000080;" textFill="WHITE" />
+      <Label fx:id="totalPrice6" layoutX="705.0" layoutY="522.0" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #000080;" textFill="WHITE" />
+      <Button fx:id="payment" layoutX="4.0" layoutY="241.0" mnemonicParsing="false" onAction="#payment" prefHeight="31.0" prefWidth="171.0" style="-fx-background-color: #2f4f4f;" text="PAY BY CREDIT CARD" textFill="WHITE" />
+      <Separator layoutX="191.0" layoutY="41.0" orientation="VERTICAL" prefHeight="541.0" prefWidth="7.0" style="-fx-background-color: black;" />
+      <Label fx:id="reel" layoutX="211.0" layoutY="67.0" prefHeight="21.0" prefWidth="116.0" text="Fishing Reels" />
+      <Label fx:id="hook" layoutX="214.0" layoutY="156.0" prefHeight="21.0" prefWidth="124.0" text="Fishing hooks" />
+      <Label fx:id="line" layoutX="207.0" layoutY="230.0" prefHeight="21.0" prefWidth="100.0" text="Fishing line" />
+      <Label fx:id="rod" layoutX="207.0" layoutY="311.0" prefHeight="21.0" prefWidth="100.0" text="Fishing rod" />
+      <Label fx:id="sinkers" layoutX="207.0" layoutY="397.0" prefHeight="21.0" prefWidth="69.0" text="Sinkers" />
+      <Label fx:id="swivels" layoutX="207.0" layoutY="488.0" prefHeight="21.0" prefWidth="69.0" text="Swivels" />
+      <Label layoutX="48.0" layoutY="67.0" prefHeight="21.0" prefWidth="100.0" text="Your bill value" textFill="WHITE" />
+      <Button fx:id="pd" layoutX="25.0" layoutY="392.0" mnemonicParsing="false" onAction="#productDetails" style="-fx-background-color: #2f4f4f;" text="PRODUCT DETAILS" textFill="#e8e8e8" />
+      <Separator layoutX="9.0" layoutY="351.0" prefHeight="1.0" prefWidth="178.0" style="-fx-background-color: black;" />
+      <Label layoutX="411.0" layoutY="14.0" prefHeight="21.0" prefWidth="116.0" text="SHOPPING CART" textFill="WHITE" />
+      <ImageView fitHeight="86.0" fitWidth="87.0" layoutX="775.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cart.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="cartback" layoutX="61.0" layoutY="522.0" mnemonicParsing="false" onAction="#cartback" style="-fx-background-color: #8b0000;" text="BACK" textFill="WHITE" />
+      <TextField fx:id="name" layoutX="4.0" layoutY="151.0" promptText="enter name" />
+      <TextField fx:id="mailid" layoutX="4.0" layoutY="198.0" promptText="enter mailid" />
+   </children>
+</AnchorPane>

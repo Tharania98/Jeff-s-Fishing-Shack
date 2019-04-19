@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #008b8b;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.adminMainPage">
+   <children>
+      <Button fx:id="enterstaffdetails" layoutX="159.0" layoutY="137.0" mnemonicParsing="false" onAction="#enterStaffDetails" prefHeight="41.0" prefWidth="243.0" style="-fx-background-color: #2f4f4f;" text="ENTER STAFF DETAILS" textFill="WHITE" />
+      <Button fx:id="viewtransactions" layoutX="159.0" layoutY="200.0" mnemonicParsing="false" onAction="#viewTransactions" prefHeight="31.0" prefWidth="243.0" style="-fx-background-color: #2f4f4f;" text="VIEW TRANSACTIONS" textFill="WHITE" />
+      <Button fx:id="modifystaffdetails" layoutX="162.0" layoutY="256.0" mnemonicParsing="false" onAction="#modifyStaffDetails" prefHeight="41.0" prefWidth="243.0" style="-fx-background-color: #2f4f4f;" text="MODIFY STAFF DETAILS" textFill="WHITE" />
+      <Button fx:id="adminlogout" layoutX="503.0" layoutY="348.0" mnemonicParsing="false" onAction="#adminlogout" style="-fx-background-color: #8b0000;" text="LOGOUT" textFill="WHITE" />
+   </children>
+</AnchorPane>

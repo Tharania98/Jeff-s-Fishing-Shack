@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="610.0" prefWidth="871.0" style="-fx-background-color: #008b8b;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.staffMainPage">
+   <children>
+      <Label alignment="CENTER" layoutX="305.0" layoutY="24.0" prefHeight="21.0" prefWidth="262.0" text="View transactions" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font></Label>
+      <TableView fx:id="viewtransactions" layoutX="20.0" layoutY="168.0" prefHeight="277.0" prefWidth="839.0" style="-fx-background-color: #483d8b;">
+        <columns>
+          <TableColumn fx:id="customername" prefWidth="139.99998474121094" text="CUSTOMER NAME" />
+          <TableColumn fx:id="reel" minWidth="0.0" prefWidth="118.0" text="FISHING REELS" />
+            <TableColumn fx:id="hook" prefWidth="123.0" text="FISHING HOOKS" />
+            <TableColumn fx:id="line" minWidth="0.0" prefWidth="124.0" text="FISHING LINE" />
+            <TableColumn fx:id="rod" minWidth="0.0" prefWidth="107.0" text="FISHING ROD" />
+            <TableColumn fx:id="sinker" minWidth="0.0" prefWidth="69.0" text="SINKERS" />
+            <TableColumn fx:id="swivel" prefWidth="96.0" text="SWIVELS" />
+            <TableColumn fx:id="price" prefWidth="61.0" text="PRICE" />
+        </columns>
+      </TableView>
+      <Button fx:id="stfmainpageback" layoutX="759.0" layoutY="553.0" mnemonicParsing="false" onAction="#staffmainpageback" style="-fx-background-color: #8b0000;" text="BACK" textFill="WHITE" />
+      <Button layoutX="305.0" layoutY="553.0" mnemonicParsing="false" onAction="#loadtransactions" style="-fx-background-color: #2f4f4f;" text="LOAD DATA" textFill="WHITE" />
+   </children>
+</AnchorPane>

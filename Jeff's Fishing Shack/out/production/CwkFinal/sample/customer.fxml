@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #008b8b;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Customer">
+   <children>
+      <Button fx:id="purchase" layoutX="209.0" layoutY="92.0" mnemonicParsing="false" onAction="#purchase" prefHeight="39.0" prefWidth="182.0" style="-fx-background-color: #2f4f4f;" text="PURCHASE" textFill="WHITE" />
+      <Button fx:id="inquire" layoutX="213.0" layoutY="243.0" mnemonicParsing="false" onAction="#inquire" prefHeight="31.0" prefWidth="176.0" style="-fx-background-color: #2f4f4f;" text="INQUIRE" textFill="WHITE" />
+      <Button fx:id="modify" layoutX="209.0" layoutY="169.0" mnemonicParsing="false" onAction="#modify" prefHeight="31.0" prefWidth="182.0" style="-fx-background-color: #2f4f4f;" text="MODIFY DETAILS" textFill="WHITE" />
+      <Button fx:id="logout" layoutX="508.0" layoutY="348.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #8b0000;" text="LOGOUT" textFill="WHITE" />
+   </children>
+</AnchorPane>
